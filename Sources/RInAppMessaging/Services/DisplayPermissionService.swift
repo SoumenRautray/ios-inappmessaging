@@ -113,6 +113,7 @@ extension DisplayPermissionService {
         var builder = HeaderAttributesBuilder()
         builder.addSubscriptionID(configurationRepository: configurationRepository)
         builder.addAccessToken(accountRepository: accountRepository)
+        builder.addDeviceID()
 
         return builder.build()
     }
